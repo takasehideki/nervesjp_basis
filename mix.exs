@@ -3,7 +3,7 @@ defmodule NervesjpBasis.MixProject do
 
   @app :nervesjp_basis
   @version "0.1.0"
-  @all_targets [:rpi4]
+  @all_targets [:rpi0]
 
   def project do
     [
@@ -44,7 +44,7 @@ defmodule NervesjpBasis.MixProject do
       {:nerves_pack, "~> 0.4.0", targets: @all_targets},
 
       # Dependencies for specific targets
-      {:nerves_system_rpi4, "== 1.13.0", runtime: false, targets: :rpi4}
+      {:nerves_system_rpi0, "== 1.13.0", runtime: false, targets: :rpi0}
     ]
   end
 
